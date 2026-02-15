@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<meta charset = "utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<title>vid</title>
+</head>
+<html style="height: 100%; margin: 0; background: black;">
+<body style="height: 100%; margin: 0; display: flex; justify-content: center; align-items: center;">
+
+  <video id="myVideo" width="80%" controls autoplay>
+    <source src="Video4.mp4" type="video/mp4">
+  </video>
+
+  <script>
+  // Listen for a click anywhere on the page at any time
+  window.addEventListener('click', function() {
+    // Go back to the previous page in history
+    window.history.back(); 
+  }, { once: true }); // { once: true } ensures the code only runs once
+
+  // Optional: If the video actually ends without a click, go back automatically
+  const video = document.getElementById('myVideo');
+  if (video) {
+    video.onended = function() {
+      window.history.back();
+    };
+  }
+</script>
+
+
+</body>
+</html>

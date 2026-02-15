@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset = "utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+ <title>HAPPY BIRTHDAY</title>
+
+ 
+
+<style>
+@font-face {
+  font-family: 'Livvic';
+  src: url('fonts/Livvic-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Klemer Display';
+  src: url("./fonts/KlemerDisplay.woff2") format("woff2"),
+       url("./fonts/KlemerDisplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+  
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+body{font-family: "Klemer Display";}
+
+.navbar {
+  position: fixed; /* Keep it at the top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  
+  /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* The blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle glass edge */
+  box-sizing: border-box;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Ensure container starts below the navbar */
+.birthday-container {
+  padding-top: 100px;
+  /* Removed 'font-family: sans-serif' to fix font issue */
+}
+
+
+.birthday-container {
+  max-width: 1500px; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  padding: 40px;
+  padding-top: 100px; 
+  background: url('background.jpg');
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+/* Positioning */
+.top-left { font-size: 14px; letter-spacing: 1px; }
+.top-right { justify-self: end; }
+
+
+  .top-header {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box; 
+  
+  /* The Line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); 
+  
+  
+  padding: 20px 0px; 
+}
+
+.date, .logo {
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Stylized Headline */
+
+
+
+.main-heading {
+  font-family: "Klemer Display", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 0.8;
+  text-align: center;
+  position: relative;
+}
+
+.pink-text {
+  color: #fdb6c9; 
+}
+
+.white-text {
+  color: #eceada;
+}
+
+.orange-star {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #e65a1e;
+  clip-path: polygon(100% 50%, 78.98% 57.76%, 93.3% 75%, 71.21% 71.21%, 75% 93.3%, 57.76% 78.98%, 50% 100%, 42.24% 78.98%, 25% 93.3%, 28.79% 71.21%, 6.7% 75%, 21.02% 57.76%, 0% 50%, 21.02% 42.24%, 6.7% 25%, 28.79% 28.79%, 25% 6.7%, 42.24% 21.02%, 50% 0%, 57.76% 21.02%, 75% 6.7%, 71.21% 28.79%, 93.3% 25%, 78.98% 42.24%);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
+
+
+.bottom-center {
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  grid-column: 1 / span 2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<nav class="navbar">
+  <div class="logo" style="font-family: 'Klemer Display', sans-serif; font-size: 22px;">QA</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Mandie.html">Mandies</a></li>
+	<li><a href="Last.html">Wishes</a></li>
+  </ul>
+</nav>
+
+
+<div class="birthday-container">
+  <header class="top-header">
+    <div class="date">15 FEBRUARY 2026</div>
+    <div class="logo">AM</div>
+  </header>
+  
+ <h1 class="main-heading">
+  <span class="pink-text">HAPPY B.BDAY</span>
+  <br>
+  <span class="white-text">MANDIE</span>
+  <div class="orange-star"></div>
+</h1>
+  
+  <div class="bottom-center">
+    <p>SENDING MY LOVE FROM ME TO YOU</p>
+    
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset = "utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<title>About</title>
+
+
+<style>
+ .navbar {
+  position: fixed; /* Keep it at the top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  
+  /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* The blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle glass edge */
+  box-sizing: border-box;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #e46c2f;
+  text-decoration: none;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Ensure container starts below the navbar */
+.birthday-container {
+  padding-top: 100px;
+  /* Removed 'font-family: sans-serif' to fix font issue */
+}
+
+body { 
+	background-color :#fdb6c9;
+	margin: 0;
+	padding: 40px;
+	}
+.layout {
+  display: flex;
+  gap: 40px;
+	}
+/* LEFT BIG IMAGE */
+
+.left img {
+  width: 450px;
+  border-radius: 10px;
+}
+/* RIGHT SIDE */
+.right {
+  max-width: 550px;
+}
+
+@font-face {
+    font-family: 'Klemer Display';
+    src: url('fonts/KlemerDisplay.woff2') format('woff2'),
+         url('fonts/KlemerDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.right h1 {
+   font-family: 'Klemer Display', serif;
+  font-size: 80px;
+  color: #ff7a2f;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('fonts/Livvic-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.right p {
+  font-family :'Livvic', sans-serif;
+  font-weight: 100;
+   line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.right img {
+  width: 260px;
+  border-radius: 8px;
+}
+
+.image-box {
+  width: 100%;
+  height: 300px;   /* adjust if needed */
+  overflow: hidden;
+  border-radius: 8px; /* optional */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+</style>
+<body>
+
+<nav class="navbar">
+  <div class="logo" style="font-family: 'Klemer Display', sans-serif; font-size: 22px;">QA</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Mandie.html">Mandies</a></li>
+	<li><a href="Last.html">Wishes</a></li>
+  </ul>
+</nav>
+
+ <section class="layout">
+
+    <!-- LEFT IMAGE -->
+    <div class="left">
+      <img src="AMANDA.jpg" alt="AMANDA">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="right">
+      <h1>ABOUT</h1>
+      <p>
+        Hi Mandies this is a little something I made for you to wish you a happy birthday...
+        since I have no money this is my gift to you &lt;3
+      </p>
+
+<div class = "image-box">
+      <img src="baby mandies.jpeg" alt="Baby Mandies">
+    </div>
+	</div>
+
+  </section>
+
+</body>

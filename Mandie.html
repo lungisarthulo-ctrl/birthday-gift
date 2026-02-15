@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+
+ <title>Mandie</title>
+<style>
+
+body { 
+    background-color: #eceada;
+    margin: 0;
+    padding: 40px;
+}
+
+.navbar {
+  position: fixed; /* Keep it at the top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  
+  /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* The blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle glass edge */
+  box-sizing: border-box;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Ensure container starts below the navbar */
+.birthday-container {
+  padding-top: 100px;
+  /* Removed 'font-family: sans-serif' to fix font issue */
+}
+
+
+/* GRID LAYOUT */
+.container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+	height: 600px;
+
+    gap: 20px;
+    padding: 40px;
+}
+
+/* TITLE */
+
+@font-face {
+    font-family: 'Klemer Display';
+    src: url('fonts/KlemerDisplay.woff2') format('woff2'),
+         url('fonts/KlemerDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.title{
+    grid-column: 1;
+    grid-row: 1;
+	font-family: 'Klemer Display', serif;
+    font-size: 70px;
+    color: #e46c2f;
+    font-weight: bold;
+    align-self: end;
+}
+
+/* IMAGE CARDS */
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXT OVERLAY */
+.label{
+	font-family: 'Kelmar Display', serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* GRID POSITIONS */
+.left-top{
+    grid-column: 1;
+    grid-row: 2;
+	
+}
+
+.left-bottom{
+    grid-column: 1;
+    grid-row: 3;
+	
+}
+
+.center{
+    grid-column: 2;
+    grid-row: 1 / span 3;
+}
+
+.right-top{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.right-bottom{
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo" style="font-family: 'Klemer Display', sans-serif; font-size: 22px;">QA</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Mandie.html">Mandies</a></li>
+	<li><a href="Last.html">Wishes</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+    <h1 class="title">MANDIE</h1>
+
+    <!-- Left column -->
+    <div class="left-top card">
+        <img src="softie.jpeg">
+        <div class="label">⇏ &nbsp SOFTIE</div>
+    </div>
+
+    <div class="left-bottom card">
+        <img src="godfearing.jpeg">
+        <div class="label"> ⇏ &nbsp GOD FEARING</div>
+    </div>
+
+    <!-- Center large image -->
+    <div class="center card">
+        <img src="her.jpeg">
+        <div class="label">⇏ &nbsp GIRL GROWN</div>
+    </div>
+
+    <!-- Right column -->
+    <div class="right-top card">
+        <img src="together2.jpg">
+        <div class="label">⇏ &nbsp KIND</div>
+    </div>
+
+    <div class="right-bottom card">
+        <img src="sister1.jpeg">
+        <div class="label"> ⇏ &nbsp BEAUTIFUL</div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

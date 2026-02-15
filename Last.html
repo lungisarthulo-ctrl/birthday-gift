@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset = "utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<title>Last</title>
+<style>
+@font-face {
+  font-family: 'Livvic';
+  src: url('fonts/Livvic-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  }
+  .navbar {
+  position: fixed; /* Keep it at the top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  
+  /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* The blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle glass edge */
+  box-sizing: border-box;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fdb6c9;
+  text-decoration: none;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Ensure container starts below the navbar */
+.birthday-container {
+  padding-top: 100px;
+  /* Removed 'font-family: sans-serif' to fix font issue */
+}
+
+
+body{ 
+background-color:#282a29;
+color: white;
+font-family :'Livvic', sans-serif;
+font-weight: 100;
+}
+.card {
+  max-width: 1500px;
+  margin: auto;
+  border: 1px solid #555;
+  padding: 100px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+@font-face {
+    font-family: 'Klemer Display';
+    src: url('fonts/KlemerDisplay.woff2') format('woff2'),
+         url('fonts/KlemerDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.main-title {
+  font-family: 'Klemer Display', serif;
+  font-size: 120px;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bottom-left-text {
+  margin-top: 60px;
+}
+
+.image-container img {
+  width: 450px; /* Fixed width for the image */
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo" style="font-family: 'Klemer Display', sans-serif; font-size: 22px;">QA</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Mandie.html">Mandies</a></li>
+	<li><a href="Last.html">Wishes</a></li>
+  </ul>
+</nav>
+
+
+ <div class="card">
+  <div class="top-section">
+    <!-- Left Column: Text Content -->
+    <div class="text-content">
+      <h1 class="main-title">TOO<br>SHORT?</h1>
+      <p class="cta">Click here ---></p>
+      
+      <div class="bottom-left-text">
+        <h2>I LOVE YOU!!</h2>
+        <p>Also uyaguga shame!!</p>
+      </div>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="image-container">
+	<a href="Video.html">
+      <img src="download.jpeg" alt="Description">
+	  </a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <span>With love : Qhashu</span>
+    <div class="footer-logo" style="font-family: 'Klemer Display', sans-serif; font-size: 22px;">QA</div>
+  </div>
+</div>
+
+
+</body>
+</html>

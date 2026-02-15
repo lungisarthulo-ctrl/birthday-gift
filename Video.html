@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <head>
 <meta charset = "utf-8">
-<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>vid</title>
 </head>
-<html style="height: 100%; margin: 0; background: black;">
-<body style="height: 100%; margin: 0; display: flex; justify-content: center; align-items: center;">
+<style>
+  html {
+    height: 100%;
+    margin: 0; 
+    background: black;
+  }
+  body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  /* ========================= */
+/* MOBILE RESPONSIVE FIX */
+/* ========================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 40px;
+  }
+
+  .right p {
+    font-size: 16px;
+  }
+
+  .image-box {
+    height: 200px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+}
+
+</style>
+<html>
+<body>
 
   <video id="myVideo" width="80%" controls autoplay>
     <source src="Video4.mp4" type="video/mp4">
@@ -30,3 +91,4 @@
 
 </body>
 </html>
+

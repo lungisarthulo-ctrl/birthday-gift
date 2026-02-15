@@ -72,23 +72,24 @@
     <source src="Video4.mp4" type="video/mp4">
   </video>
 
-  <script>
-  // Listen for a click anywhere on the page at any time
-  window.addEventListener('click', function() {
-    // Go back to the previous page in history
-    window.history.back(); 
-  }, { once: true }); // { once: true } ensures the code only runs once
+<script>
+    const video = document.getElementById('myVideo');
 
-  // Optional: If the video actually ends without a click, go back automatically
-  const video = document.getElementById('myVideo');
-  if (video) {
+    // When the video ends, listen for a click anywhere on the page
     video.onended = function() {
-      window.history.back();
+      // Optional: Show a message like "Click anywhere to go back"
+      document.body.style.cursor = "pointer";
+      
+      window.addEventListener('click', function() {
+        // Go back to the previous page in history
+        window.history.back(); 
+      }, { once: true });
     };
-  }
-</script>
+  </script>
+
 
 
 </body>
 </html>
+
 
